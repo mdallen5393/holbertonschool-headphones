@@ -1,0 +1,273 @@
+@import url("./fonts/holberton_school-icon/style.css");
+
+/* #region ROOT */
+
+:root {
+  --color-white: #fff;
+  --color-black: #071629;
+  --color-gray: #979797;
+  --header-hover-color: #ff6565;
+  --color-orange: #FF6565;
+  --header-hover-opacity: 0.9;
+  --header-max-width: 1000px;
+  --default-font: url("./fonts/SourceSansPro-Regular.otf");
+}
+
+/* #endregion */
+
+/* #region BODY */
+
+body {
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  font-family: var(--default-font);
+  max-width: 1000px;
+  margin: auto;
+  align-items: center;
+  color: var(--color-black)
+}
+
+/* #endregion */
+
+/* #region HEADER */
+
+.header {
+  display:flex;
+  flex-direction: column;
+  background-image: url("./images/headphones_hero_1.jpg");
+  padding: 5%;
+  color: var(--color-white);
+}
+
+.header header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .burger-patties {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .burger-patties a {
+  margin: 5%;
+  width: 150px
+}
+
+.header .hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 65%;
+  align-self: center;
+  margin-top: 20%
+}
+
+.hero p {
+  margin-top: 10%;
+}
+
+.hero h4 {
+  line-height: 0;
+  margin-bottom: 5%;
+}
+
+/* #endregion */
+
+/* #region WHAT WE DO */
+
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  text-align: center;
+}
+
+.wwd-hero {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  align-self: center;
+}
+
+.thingamajigs {
+  display: flex;
+  padding: 10%;
+}
+
+.soundwave {
+  display: flex;
+  flex-direction: column;
+}
+
+.holberton_school-icon-ic_sound {
+  font-size: 61px;
+  color: var(--color-orange);
+}
+
+.movie-clicker {
+  display: flex;
+  flex-direction: column;
+}
+
+.holberton_school-icon-ic_video {
+  font-size: 61px;
+  color: var(--color-orange);
+}
+
+.music-note {
+  display: flex;
+  flex-direction: column;
+}
+
+.holberton_school-icon-ic_music {
+  font-size: 61px;
+  color: var(--color-orange);
+}
+
+.ear {
+  display: flex;
+  flex-direction: column;
+}
+
+.holberton_school-icon-ic_hearing {
+  font-size: 61px;
+  color: var(--color-orange);
+}
+
+/* #endregion */
+
+/* #region RESULTS */
+
+.results {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/headphones_hero_2.jpg");
+  background-size: cover;
+  color: var(--color-white);
+  justify-content: center;
+  padding: 5%;
+  text-align: center;
+}
+
+.results .results-speak {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 60%;
+}
+
+.results .pentas {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  padding: 5%;
+}
+
+.results .pentagon {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/pentagone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 4%;
+}
+
+.pentagon h1 {
+  line-height: 0;
+  margin-top: 40%;
+}
+
+.pentagon p {
+  font-size: x-small;
+}
+
+/* #endregion */
+
+/* #region CONTACT US */
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-us legend {
+  text-align: center;
+}
+
+.contact-us .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+
+.contact-form input[type="text"] {
+  border: none;
+  border-bottom: 1px solid var(--color-gray);
+  margin-top: 2%;
+  color: var(--color-black);
+}
+
+.contact-form input[type="submit"], button {
+  margin-top: 2%;
+  width: 15em;
+  align-self: center;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border: none;
+  padding: 20px;
+  border-radius: 100px;
+}
+
+.contact-form input::placeholder {
+  color: var(--color-black);
+}
+
+/* #endregion */
+
+/* #region FOOTER */
+
+.footer {
+  display: flex;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100em;
+  justify-content: space-between;
+}
+
+.footer .logo-socials {
+  display: flex;
+  align-items: center;
+  margin: 5%
+}
+
+.footer .logo-socials img {
+  max-height: 162px;
+}
+
+.socials {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socials div {
+  margin: 2%;
+  font-size: xx-large
+}
+
+.footer p {
+  text-align: center;
+  font-size: small;
+  color: gray;
+  margin-bottom: 3%;
+}
+
+/* #endregion */
